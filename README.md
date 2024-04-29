@@ -1,4 +1,4 @@
-# plain-mathemathics
+# plain-mathematics
 a math text for a gifted child
 
 This is the source code for a latex textbook in mathematics for a child. 
