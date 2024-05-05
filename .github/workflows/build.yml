@@ -30,5 +30,13 @@ jobs:
       - name: Build
         uses: xu-cheng/latex-action@v2
         with:
-          root_file: book/plainmath.tex
-
+          working_directory: book
+          root_file: plainmath.tex
+      - name: Copy
+        run: |
+            mkdir out
+            cp ./book/plainmath.pdf ./out/plainmath.pdf
+      - uses: actions/upload-artifact@v2
+        with:
+              name: plainmath
+              path: out/plainmath.pdf
